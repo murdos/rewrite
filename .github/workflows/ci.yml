@@ -37,7 +37,7 @@ jobs:
           distribution: "temurin"
           java-version: ${{ matrix.java }}
       - name: setup-cache
-        uses: actions/cache@v2.1.6
+        uses: actions/cache@v3.0.6
         with:
           path: |
             ~/.gradle/caches
@@ -67,7 +67,7 @@ jobs:
           distribution: "temurin"
           java-version: "11"
       - name: setup-cache
-        uses: actions/cache@v2.1.6
+        uses: actions/cache@v3.0.6
         with:
           path: |
             ~/.gradle/caches
