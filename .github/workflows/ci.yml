@@ -28,7 +28,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     if: github.repository_owner == 'openrewrite'
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.1.0
         with:
           fetch-depth: 0
       - name: set-up-jdk
@@ -58,7 +58,7 @@ jobs:
     runs-on: ubuntu-latest
     if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule') && github.repository_owner == 'openrewrite'
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.1.0
         with:
           fetch-depth: 0
       - name: set-up-jdk
